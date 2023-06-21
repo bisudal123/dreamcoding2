@@ -1,4 +1,12 @@
-h1 , h2 ,  h3, h4, h5, h6  {
+
+body {
     font-family: 'Roboto Condensed', sans-serif;
-font-family: 'Tilt Prism', cursive;
+    font-family: 'Tilt Prism', cursive;
+  }
+
+button {
+
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Tilt Prism', cursive;
+
 }
