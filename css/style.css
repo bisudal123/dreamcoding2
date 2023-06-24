@@ -428,3 +428,41 @@ margin: 3rem;
     font-weight: bold;
     filter: brightness(70%);
 }
+
+/* Arrow up */
+
+.arrow-up{
+    background-color: var(--color-primary);
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    font-size: 3rem;
+    width: 4rem;
+    height: 4rem;
+    text-align: center;
+    border-radius: 100%;
+    
+    box-shadow: 5px 5px 0px 0px var(--color-accent);
+}
+
+/* Footer */
+
+#contact {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+}
+
+.contack__links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.contack__link{
+    transition: color 200ms ease-in;
+}
+.contack__link:hover {
+    color: var(--color-accent);
+}
