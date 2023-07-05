@@ -1,3 +1,5 @@
+'use strict';
+
 const header = document.querySelector('.header');
 const headerHeight = header.offsetHeight;
 
@@ -43,4 +45,18 @@ if(window.scrollY < bodyHeight/2) {
 else{
     arrow.classList.remove('opacity')
 }
+});
+
+// navbar 토글버튼 클릭
+
+const navbarMenu = document.querySelector('.header__menu');
+const navbarToggle = document.querySelector('.header__toggle');
+navbarToggle.addEventListener('click', ()=> {
+    navbarMenu.classList.toggle('open');
+});
+
+// navbar 메뉴 클릭시 메뉴를 자동으로 닫아줌
+
+navbarMenu.addEventListener('click', ()=> {
+    navbarMenu.classList.toggle('open');
 });
