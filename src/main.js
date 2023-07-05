@@ -22,7 +22,25 @@ else {
 const home = document.querySelector('.home__container');
 const homeHeight = home.offsetHeight;
 document.addEventListener('scroll', () => {
-    console.log( 1 - window.scrollY / homeHeight);
+
 
 home.style.opacity = 1 - window.scrollY / homeHeight;
+});
+
+// body 섹션을 절반이상 스크롤시, 화살표 나타나게
+
+const body = document.querySelector('.body');
+const bodyHeight = body.offsetHeight;
+const arrow = document.querySelector('.arrow')
+
+document.addEventListener('scroll', ()=> {
+
+console.log(window.scrollY);
+
+if(window.scrollY < bodyHeight/2) {
+    arrow.classList.add('opacity')
+}
+else{
+    arrow.classList.remove('opacity')
+}
 });
