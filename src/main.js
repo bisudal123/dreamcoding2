@@ -37,7 +37,6 @@ const arrow = document.querySelector('.arrow')
 
 document.addEventListener('scroll', ()=> {
 
-console.log(window.scrollY);
 
 if(window.scrollY < bodyHeight/2) {
     arrow.classList.add('opacity')
